@@ -4,27 +4,28 @@ using UnityEngine;
 
 public class ChangeTypeOfPlayer : MonoBehaviour 
 {
-    public Paladin paladin;
-    public Mago mago;
-    public Luchador luchador;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    Player claseActual;
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        
+        claseActual = new Paladin();
+        claseActual.AplicarClase();
     }
-
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Alfombra"))
+        if (other.gameObject.CompareTag("Alfombra Luchador"))
         {
-            luchador.Vida();
+            claseActual = new Luchador();
+            claseActual.AplicarClase();
         }
+
+        if (other.gameObject.CompareTag("Alfombra Paladin"))
+        {
+            claseActual = new Paladin();
+            claseActual.AplicarClase();
+        }
+
+       
     }
 }
