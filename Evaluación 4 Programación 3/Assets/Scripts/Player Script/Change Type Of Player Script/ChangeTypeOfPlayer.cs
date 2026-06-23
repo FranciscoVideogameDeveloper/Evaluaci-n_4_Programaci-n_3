@@ -21,9 +21,10 @@ public class ChangeTypeOfPlayer : MonoBehaviour // A diferencia de los Scripts a
             claseActual.AplicarClase(); // Se hace el llamado al metodo de la clase Player.
         }
 
-        if (other.gameObject.CompareTag("Alfombra Paladin")) // Se corrobora mediante un "if" que el objeto al que colisionamos, el cual es trigger tenga los debidos tags asignados.
+        if (other.gameObject.CompareTag("Alfombra Mago")) // Se corrobora mediante un "if" que el objeto al que colisionamos, el cual es trigger tenga los debidos tags asignados.
         {
-            claseActual = new Paladin(); // Una vez corroborada la informacion, este hace cambio a la clase "Paladin", mediante el mismo metodo utlizado al inicio.
+            claseActual = new Mago(); // Una vez corroborada la informacion, este hace cambio a la clase "Paladin", mediante el mismo metodo utlizado al inicio.
+            claseActual.AplicarClase();
         }
 
        
