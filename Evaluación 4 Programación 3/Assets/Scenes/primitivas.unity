@@ -222,6 +222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: objeto
       objectReference: {fileID: 0}
+    - target: {fileID: 101611376064626024, guid: 768f84d31b79aa34f82ee2f930e5e4be, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4963313791998343254, guid: 768f84d31b79aa34f82ee2f930e5e4be, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8862286
@@ -376,6 +380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: cofre
       objectReference: {fileID: 0}
+    - target: {fileID: 6399730272540855201, guid: 8c797a9efc6fde54c8e923f6a14d50a5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -391,7 +399,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5250889565712242302, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
       propertyPath: m_Name
-      value: Luchador Plane
+      value: Mago Plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 5250889565712242302, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra Mago
       objectReference: {fileID: 0}
     - target: {fileID: 8250886068268166042, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -490,6 +502,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: barril
       objectReference: {fileID: 0}
+    - target: {fileID: 3915917530268846051, guid: f1798b294879e3745911f1b079ce220a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -545,7 +561,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6207461532822545419, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
       propertyPath: m_Name
-      value: Pladin Plane
+      value: Luchador plane
+      objectReference: {fileID: 0}
+    - target: {fileID: 6207461532822545419, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
+      propertyPath: m_TagString
+      value: Alfombra Luchador
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -604,6 +624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7845453052499897300, guid: 0b3041c0c136a2f41b6243edb806f60e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -656,6 +680,10 @@ PrefabInstance:
     - target: {fileID: 1757468561015663195, guid: fe3eeb27a98a0df41a9b67dad9e3c2f7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5272788120447910897, guid: fe3eeb27a98a0df41a9b67dad9e3c2f7, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6713228533191679485, guid: fe3eeb27a98a0df41a9b67dad9e3c2f7, type: 3}
       propertyPath: m_Name

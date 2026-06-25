@@ -21,7 +21,7 @@ namespace RPG.Inventory
         public void AgregarItem(Item item)
         {
             items.Add(item);
-            Debug.Log($"[Inventario] Item recogido: {item.ObtenerInfo()} | Total: {items.Count}");
+           // Debug.Log($"[Inventario] Item recogido: {item.ObtenerInfo()} | Total: {items.Count}");
 
       
             OnItemAgregado?.Invoke(item);
@@ -32,10 +32,10 @@ namespace RPG.Inventory
         {
             if (items.Remove(item))
             {
-                Debug.Log($"[Inventario] Item eliminado: {item.nombre}");
+               // Debug.Log($"[Inventario] Item eliminado: {item.nombre}");
                 return true;
             }
-            Debug.LogWarning($"[Inventario] Item '{item.nombre}' no encontrado.");
+            //Debug.LogWarning($"[Inventario] Item '{item.nombre}' no encontrado.");
             return false;
         }
         public void EquiparArma(string nombreArma)
@@ -55,7 +55,7 @@ namespace RPG.Inventory
                     return;
                 }
             }
-            Debug.LogWarning($"[Inventario] Arma '{nombreArma}' no encontrada en inventario.");
+            //Debug.LogWarning($"[Inventario] Arma '{nombreArma}' no encontrada en inventario.");
         }
 
    
@@ -68,12 +68,12 @@ namespace RPG.Inventory
         {
             if (items.Count == 0)
             {
-                Debug.Log("[Inventario] El inventario esta vacio.");
+                //Debug.Log("[Inventario] El inventario esta vacio.");
                 return;
             }
-            Debug.Log($"[Inventario] === Contenido ({items.Count} item(s)) ===");
-            foreach (Item item in items)
-                Debug.Log("  " + item.ObtenerInfo());
+            //Debug.Log($"[Inventario] === Contenido ({items.Count} item(s)) ===");
+            //foreach (Item item in items)
+                //Debug.Log("  " + item.ObtenerInfo());
         }
 
         private void OnDisable()
