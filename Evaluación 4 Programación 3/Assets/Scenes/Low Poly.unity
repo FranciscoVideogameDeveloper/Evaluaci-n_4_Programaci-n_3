@@ -263,6 +263,32 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1124341298}
   m_SourcePrefab: {fileID: 100100000, guid: ccc8f31535fb17b48a7e802b40aa10cb, type: 3}
+--- !u!1 &132994234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5250889565712242302, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
+  m_PrefabInstance: {fileID: 1015446551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &132994235
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132994234}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &147355510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,27 +368,32 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1231547404}
   m_SourcePrefab: {fileID: 100100000, guid: af15aa5ffd68901489d518ebac40feb5, type: 3}
---- !u!1 &358085851 stripped
+--- !u!1 &410158969 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ce9f84a08b425e42a41e678ab68a6b9, type: 3}
-  m_PrefabInstance: {fileID: 670795034}
+  m_CorrespondingSourceObject: {fileID: 6207461532822545419, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
+  m_PrefabInstance: {fileID: 1011415458}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &358085853
-MonoBehaviour:
+--- !u!65 &410158970
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 358085851}
+  m_GameObject: {fileID: 410158969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7ec89fd22abdfb4db2f4c219ba854bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vidaMaxima: 100
-  danio: 10
-  cooldownAtaque: 1.5
-  rangoDeteccion: 3
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &478343785 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4ce9f84a08b425e42a41e678ab68a6b9, type: 3}
@@ -382,7 +413,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaMaxima: 100
   danio: 10
-  cooldownAtaque: 1.5
+  cooldown: 1.5
   rangoDeteccion: 3
 --- !u!136 &478343790
 CapsuleCollider:
@@ -463,9 +494,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 4ce9f84a08b425e42a41e678ab68a6b9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 358085853}
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 4ce9f84a08b425e42a41e678ab68a6b9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 478343790}
@@ -544,7 +572,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6207461532822545419, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 410158970}
   m_SourcePrefab: {fileID: 100100000, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
 --- !u!1001 &1015446551
 PrefabInstance:
@@ -613,7 +644,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5250889565712242302, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 132994235}
   m_SourcePrefab: {fileID: 100100000, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
 --- !u!1 &1091131098 stripped
 GameObject:
@@ -632,9 +666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bfa0fdbdbd1654588638a28153a0b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemId: 20
   nombreItem: Pocion de Vida
   descripcion: Restaura 50 de vida.
-  itemId: 20
 --- !u!65 &1091131102
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -786,7 +820,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -818,6 +852,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.024, y: 0.034, z: 0.024}
   m_Center: {x: 0, y: 0.017, z: 0.0000020000152}
+--- !u!114 &1197063165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197063159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1357f23ff514184daffed91275f81fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resistencia: 30
 --- !u!1 &1200843129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1310,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 56dc8d1a1255de34990085099dafed92, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1197063163}
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 56dc8d1a1255de34990085099dafed92, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1197063165}
   m_SourcePrefab: {fileID: 100100000, guid: 56dc8d1a1255de34990085099dafed92, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
