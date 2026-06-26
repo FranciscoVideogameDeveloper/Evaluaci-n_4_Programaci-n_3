@@ -24,6 +24,9 @@ namespace RPG.Interaction
             GetComponent<Collider>().isTrigger = true;
         }
 
+       
+     
+
         public void Interact()
         {
             if (yaAbierto || inventarioJugador == null) return;
@@ -37,19 +40,24 @@ namespace RPG.Interaction
             OnCofreAbierto?.Invoke(nombreItem);
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider obj)
         {
-            if (other.CompareTag("Player"))
+            if (obj.CompareTag("Player"))
             {
-                inventarioJugador = other.GetComponent<Inventario>();
+                inventarioJugador = obj.GetComponent<Inventario>();
                 Debug.Log("[Cofre] Presiona [E] para abrir el cofre.");
             }
         }
 
-        private void OnTriggerExit(Collider other)
+        private void OnTriggerExit(Collider obj)
         {
-            if (other.CompareTag("Player"))
+            if (obj.CompareTag("Player"))
+            {
+
                 inventarioJugador = null;
+
+            }
+         
         }
     }
 }

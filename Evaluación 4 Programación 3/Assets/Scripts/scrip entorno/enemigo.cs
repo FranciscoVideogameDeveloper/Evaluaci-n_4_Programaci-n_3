@@ -20,6 +20,9 @@ public class Enemigo : MonoBehaviour, IDamageable
     private PlayerController player;   // cacheado en Start
 
     public event Action<string> OnEnemigoDerrotado;
+    public delegate void DamageHeadler(float remeaningHealth);
+    
+    public event DamageHeadler Ondamaged;
 
     private void Start()
     {
@@ -48,14 +51,19 @@ public class Enemigo : MonoBehaviour, IDamageable
         }
     }
 
+    
+
     // IDamageable — el jugador lo daña con tecla F
     public void RecibirDanio(float cantidad)
     {
         vidaActual -= cantidad;
         Debug.Log($"[Enemigo] {gameObject.name} recibio {cantidad}. Vida: {vidaActual}/{vidaMaxima}");
-
+        Ondamaged?.Invoke(vidaActual);
         if (vidaActual <= 0f)
+        {
             Morir();
+        }
+
     }
 
     private void Morir()
