@@ -1,5 +1,5 @@
-// Segundo objeto que implementa IDamageable.
-// Se destruye al recibir suficiente daño.
+// Segundo objeto que implementa IDamageable (distinto al Enemigo).
+// con Debugs distintos al recibir daño.
 
 using System;
 using UnityEngine;
@@ -10,7 +10,6 @@ public class Barril : MonoBehaviour, IDamageable
     [SerializeField] private float resistencia = 30f;
     private float saludActual;
 
-    // Evento: notifica cuando el barril es destruido
     public event Action OnBarrilDestruido;
 
     private void Start()
@@ -18,15 +17,15 @@ public class Barril : MonoBehaviour, IDamageable
         saludActual = resistencia;
     }
 
-    /// <summary>Recibe daño. Se destruye si la salud llega a 0.</summary>
+    // IDamageable — Debug distinto al del Enemigo 
     public void RecibirDanio(float cantidad)
     {
         saludActual -= cantidad;
-        Debug.Log($"[Barril] Daño recibido: {cantidad}. Salud restante: {saludActual}");
+        Debug.Log($"[Barril] Impacto recibido: {cantidad}. Integridad: {saludActual}/{resistencia}");
 
         if (saludActual <= 0f)
         {
-            Debug.Log("[Barril] Barril destruido.");
+            Debug.Log("[Barril] El barril ha sido destruido.");
             OnBarrilDestruido?.Invoke();
             Destroy(gameObject);
         }

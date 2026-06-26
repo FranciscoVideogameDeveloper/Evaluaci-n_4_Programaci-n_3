@@ -1,10 +1,8 @@
-// Namespace: RPG.Interaction
-// Implementa IInteractable. El jugador presiona E para abrirlo
-// y recibir un item en su inventario.
+// Segunda implementacion de IInteractable con Interact().
+// con su propia logica al ser interactuado.
 
 using System;
 using UnityEngine;
-using RPG.Interaction;
 using RPG.Inventory;
 
 namespace RPG.Interaction
@@ -12,17 +10,13 @@ namespace RPG.Interaction
     [RequireComponent(typeof(Collider))]
     public class Cofre : MonoBehaviour, IInteractable
     {
+        [Header("Item de recompensa")]
+        [SerializeField] private int itemId = 20;
         [SerializeField] private string nombreItem = "Pocion de Vida";
         [SerializeField] private string descripcion = "Restaura 50 de vida.";
-        [SerializeField] private int itemId = 20;
 
-        // Evento: notifica cuando el cofre es abierto
         public event Action<string> OnCofreAbierto;
-
-        private bool jugadorEnRango = false;
         private bool yaAbierto = false;
-
-        // Referencia cacheada al inventario del jugador
         private Inventario inventarioJugador;
 
         private void Awake()
@@ -30,16 +24,9 @@ namespace RPG.Interaction
             GetComponent<Collider>().isTrigger = true;
         }
 
-        private void Update()
+        public void Interact()
         {
-            if (jugadorEnRango && !yaAbierto && Input.GetKeyDown(KeyCode.E))
-                Interactuar(inventarioJugador?.gameObject);
-        }
-
-        /// <summary>Abre el cofre y entrega el item al jugador.</summary>
-        public void Interactuar(GameObject iniciador)
-        {
-            if (inventarioJugador == null || yaAbierto) return;
+            if (yaAbierto || inventarioJugador == null) return;
 
             yaAbierto = true;
 
@@ -54,9 +41,7 @@ namespace RPG.Interaction
         {
             if (other.CompareTag("Player"))
             {
-                // Cachear inventario una sola vez al entrar al trigger
                 inventarioJugador = other.GetComponent<Inventario>();
-                jugadorEnRango = true;
                 Debug.Log("[Cofre] Presiona [E] para abrir el cofre.");
             }
         }
@@ -64,10 +49,7 @@ namespace RPG.Interaction
         private void OnTriggerExit(Collider other)
         {
             if (other.CompareTag("Player"))
-            {
-                jugadorEnRango = false;
                 inventarioJugador = null;
-            }
         }
     }
 }

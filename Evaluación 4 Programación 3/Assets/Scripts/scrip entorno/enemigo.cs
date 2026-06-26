@@ -1,5 +1,5 @@
-// Implementa IDamageable y ataca al jugador cuando esta cerca.
-// Presiona F cerca del enemigo para dañarlo.
+// Implementa IDamageable: recibe daño del jugador (tecla F).
+// Detecta al jugador por distancia y le quita vida con cooldown.
 
 using System;
 using UnityEngine;
@@ -10,16 +10,14 @@ public class Enemigo : MonoBehaviour, IDamageable
     [Header("Vida")]
     [SerializeField] private float vidaMaxima = 100f;
 
-    [Header("Ataque")]
+    [Header("Ataque al jugador")]
     [SerializeField] private float danio = 10f;
-    [SerializeField] private float cooldownAtaque = 1.5f;
+    [SerializeField] private float cooldown = 1.5f;
     [SerializeField] private float rangoDeteccion = 3f;
 
     private float vidaActual;
     private float timerAtaque;
-
-    // Referencia cacheada al jugador (se obtiene una sola vez en Start)
-    private PlayerController player;
+    private PlayerController player;   // cacheado en Start
 
     public event Action<string> OnEnemigoDerrotado;
 
@@ -36,21 +34,21 @@ public class Enemigo : MonoBehaviour, IDamageable
 
         float distancia = Vector3.Distance(transform.position, player.transform.position);
 
-        // Si el jugador esta dentro del rango, atacar con cooldown
         if (distancia <= rangoDeteccion)
         {
             timerAtaque -= Time.deltaTime;
-
             if (timerAtaque <= 0f)
             {
-                player.RecibirDanio(danio);
+                // Llama a IDamageable del jugador — no depende de PlayerController directamente
+                IDamageable objetivo = player.GetComponent<IDamageable>();
+                objetivo?.RecibirDanio(danio);
                 Debug.Log($"[Enemigo] {gameObject.name} ataco al jugador por {danio}.");
-                timerAtaque = cooldownAtaque;
+                timerAtaque = cooldown;
             }
         }
     }
 
-    /// Recibe daño. Si llega a 0 muere y dispara el evento.
+    // IDamageable — el jugador lo daña con tecla F
     public void RecibirDanio(float cantidad)
     {
         vidaActual -= cantidad;
