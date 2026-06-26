@@ -21,6 +21,9 @@ namespace RPG.Interaction
 
         // Referencia al inventario del jugador — cacheada en OnTriggerEnter
         private Inventario inventarioJugador;
+        public delegate void CatchItem();
+
+        public event CatchItem itemCahtch;
         
 
         private void Awake()
@@ -53,6 +56,7 @@ namespace RPG.Interaction
             {
                 inventarioJugador = other.GetComponent<Inventario>();
                 Debug.Log($"[ItemMundo] Presiona [E] para recoger '{nombreItem}'.");
+                itemCahtch?.Invoke();
             }
         }
 
