@@ -13,19 +13,21 @@ public class ChangeTypeOfPlayer : MonoBehaviour // A diferencia de los Scripts a
 
     }
 
-    private void OnControllerColliderHit(ControllerColliderHit hit)
+    private void OnTriggerEnter(Collider other)
     {
-        if (hit.gameObject.CompareTag("Alfombra Luchador")) // Se corrobora mediante un "if" que el objeto al que colisionamos, el cual es trigger tenga los debidos tags asignados.
+        if (other.CompareTag("Alfombra Luchador")) // Se corrobora mediante un "if" que el objeto al que colisionamos, el cual es trigger tenga los debidos tags asignados.
         {
-            claseActual = new Luchador(); // Una vez corroborada la informacion, este hace cambio a la clase "Luchador", mediante el mismo metodo utlizado al inicio.
-            claseActual.AplicarClase(); // Se hace el llamado al metodo de la clase Player.
+            Debug.Log("Choque con Luchador");
+            //claseActual = new Luchador(); // Una vez corroborada la informacion, este hace cambio a la clase "Luchador", mediante el mismo metodo utlizado al inicio.
+            //claseActual.AplicarClase(); // Se hace el llamado al metodo de la clase Player.
+        
         }
-
-        if (hit.gameObject.CompareTag("Alfombra Mago")) // Se corrobora mediante un "if" que el objeto al que colisionamos, el cual es trigger tenga los debidos tags asignados.
+        
+        if (other.CompareTag("Alfombra Mago")) // Se corrobora mediante un "if" que el objeto al que colisionamos, el cual es trigger tenga los debidos tags asignados.
         {
-            claseActual = new Mago(); // Una vez corroborada la informacion, este hace cambio a la clase "Paladin", mediante el mismo metodo utlizado al inicio.
-            
-            claseActual.AplicarClase();
+            Debug.Log("Choque con mago");
+            //claseActual = new Mago(); // Una vez corroborada la informacion, este hace cambio a la clase "Paladin", mediante el mismo metodo utlizado al inicio.
+            //claseActual.AplicarClase();
         }
     }
 }
