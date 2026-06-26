@@ -283,7 +283,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5250889565712242302, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1357729158}
   m_SourcePrefab: {fileID: 100100000, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
 --- !u!1 &419348175 stripped
 GameObject:
@@ -657,6 +660,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &948847902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6207461532822545419, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
+  m_PrefabInstance: {fileID: 1307113528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &948847903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948847902}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.999999, y: 2.2204459e-16, z: 9.999999}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1129836615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -724,8 +753,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1621312332122872555, guid: edb696cea06f02b44a83b61bfb0d6f53, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1198208849}
   m_SourcePrefab: {fileID: 100100000, guid: edb696cea06f02b44a83b61bfb0d6f53, type: 3}
+--- !u!1 &1198208847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1621312332122872555, guid: edb696cea06f02b44a83b61bfb0d6f53, type: 3}
+  m_PrefabInstance: {fileID: 1129836615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1198208849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198208847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1357f23ff514184daffed91275f81fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resistencia: 30
 --- !u!1001 &1294507640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -854,7 +904,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6207461532822545419, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 948847903}
   m_SourcePrefab: {fileID: 100100000, guid: a211c67756921ea4487e9e2cdc5567b6, type: 3}
 --- !u!1 &1351000089 stripped
 GameObject:
@@ -896,8 +949,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vidaMaxima: 100
   danio: 10
-  cooldownAtaque: 1.5
+  cooldown: 1.5
   rangoDeteccion: 3
+--- !u!1 &1357729157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5250889565712242302, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
+  m_PrefabInstance: {fileID: 206221730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1357729158
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357729157}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 2.220446e-16, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1431278656 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 6c27a7fc162e47d498e606e1364238af, type: 3}
@@ -1016,7 +1095,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1114,9 +1193,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7bfa0fdbdbd1654588638a28153a0b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemId: 20
   nombreItem: Pocion de Vida
   descripcion: Restaura 50 de vida.
-  itemId: 20
 --- !u!65 &2047151403
 BoxCollider:
   m_ObjectHideFlags: 0
