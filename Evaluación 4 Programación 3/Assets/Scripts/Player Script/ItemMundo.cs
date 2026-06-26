@@ -21,6 +21,7 @@ namespace RPG.Interaction
 
         // Referencia al inventario del jugador — cacheada en OnTriggerEnter
         private Inventario inventarioJugador;
+        
 
         private void Awake()
         {
@@ -42,9 +43,10 @@ namespace RPG.Interaction
 
             inventarioJugador.AgregarItem(itemCreado);
             Debug.Log($"[ItemMundo] '{nombreItem}' recogido.");
-            Destroy(gameObject);
+            
         }
 
+       
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
