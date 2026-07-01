@@ -710,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 4980696508972647700, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 360fa243384ed0742928af71ff71b314, type: 2}
+      objectReference: {fileID: 2100000, guid: e77ef4188df4b0242801cbed89c2d49b, type: 2}
     - target: {fileID: 5250889565712242302, guid: 9330688eadeaab248ab7c460db3bddf4, type: 3}
       propertyPath: m_Name
       value: Mago Plane
