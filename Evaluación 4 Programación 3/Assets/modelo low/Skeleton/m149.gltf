@@ -1,0 +1,723 @@
+{
+  "asset": {
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 7548,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 5032,
+      "byteOffset": 7548
+    },
+    {
+      "buffer": 0,
+      "byteLength": 7548,
+      "byteOffset": 12580
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 20128,
+      "byteStride": 4,
+      "byteLength": 2516
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 22644,
+      "byteStride": 4,
+      "byteLength": 2516
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2262,
+      "byteOffset": 25160
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1664,
+      "byteOffset": 27424
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 629,
+      "min": [
+        -21.97612190246582,
+        -1.5228226548060775e-3,
+        -4.815186977386475
+      ],
+      "max": [
+        22.933996200561525,
+        30.050617218017579,
+        25.513031005859376
+      ]
+    },
+    {
+      "bufferView": 1,
+      "type": "VEC2",
+      "componentType": 5126,
+      "count": 629
+    },
+    {
+      "bufferView": 2,
+      "type": "VEC3",
+      "componentType": 5126,
+      "count": 629
+    },
+    {
+      "bufferView": 3,
+      "type": "VEC4",
+      "componentType": 5121,
+      "count": 629
+    },
+    {
+      "bufferView": 4,
+      "type": "VEC4",
+      "componentType": 5121,
+      "normalized": true,
+      "count": 629
+    },
+    {
+      "bufferView": 5,
+      "type": "SCALAR",
+      "byteOffset": 0,
+      "componentType": 5123,
+      "count": 426
+    },
+    {
+      "bufferView": 5,
+      "type": "SCALAR",
+      "byteOffset": 852,
+      "componentType": 5123,
+      "count": 45
+    },
+    {
+      "bufferView": 5,
+      "type": "SCALAR",
+      "byteOffset": 942,
+      "componentType": 5123,
+      "count": 120
+    },
+    {
+      "bufferView": 5,
+      "type": "SCALAR",
+      "byteOffset": 1182,
+      "componentType": 5123,
+      "count": 540
+    },
+    {
+      "bufferView": 6,
+      "type": "MAT4",
+      "componentType": 5126,
+      "count": 26
+    }
+  ],
+  "extensionsUsed": [
+    "FB_ngon_encoding",
+    "KHR_materials_unlit"
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2,
+            "JOINTS_0": 3,
+            "WEIGHTS_0": 4
+          },
+          "material": 3,
+          "indices": 5,
+          "extensions": {
+            "FB_ngon_encoding": {}
+          }
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2,
+            "JOINTS_0": 3,
+            "WEIGHTS_0": 4
+          },
+          "material": 0,
+          "indices": 6,
+          "extensions": {
+            "FB_ngon_encoding": {}
+          }
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2,
+            "JOINTS_0": 3,
+            "WEIGHTS_0": 4
+          },
+          "material": 1,
+          "indices": 7,
+          "extensions": {
+            "FB_ngon_encoding": {}
+          }
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "TEXCOORD_0": 1,
+            "NORMAL": 2,
+            "JOINTS_0": 3,
+            "WEIGHTS_0": 4
+          },
+          "material": 2,
+          "indices": 8,
+          "extensions": {
+            "FB_ngon_encoding": {}
+          }
+        }
+      ],
+      "name": "m149"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "GlobalSRT"
+    },
+    {
+      "children": [
+        2,
+        4,
+        6,
+        11,
+        16
+      ],
+      "name": "UpperBody"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "asi_L_1",
+      "translation": [
+        2.39990234375,
+        14,
+        0
+      ],
+      "rotation": [
+        0.3529344910330938,
+        -0.612729340768998,
+        -0.3529344910330938,
+        0.6127293407689981
+      ]
+    },
+    {
+      "children": [
+        14
+      ],
+      "name": "asi_L_2",
+      "translation": [
+        6.9462890625,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5293779613989244,
+        0.8483860995944708
+      ]
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "asi_R_1",
+      "translation": [
+        -2.39990234375,
+        14,
+        0
+      ],
+      "rotation": [
+        0.3521730419447438,
+        -0.6131673087562526,
+        -0.3521730419447438,
+        0.6131673087562526
+      ]
+    },
+    {
+      "children": [
+        12
+      ],
+      "name": "asi_R_2",
+      "translation": [
+        6.9462890625,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.5295461503758039,
+        0.8482811294742837
+      ]
+    },
+    {
+      "children": [
+        7
+      ],
+      "name": "ketu",
+      "translation": [
+        0,
+        13,
+        0
+      ],
+      "rotation": [
+        0.43520493145520619,
+        0.5573120020572582,
+        0.43520493145520619,
+        0.5573120020572582
+      ]
+    },
+    {
+      "children": [
+        8,
+        9,
+        20,
+        23
+      ],
+      "name": "kosi",
+      "translation": [
+        4.123046875,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.43985849963977427,
+        0.8980670911990076
+      ]
+    },
+    {
+      "name": "huku_kataR",
+      "translation": [
+        6.751220703125,
+        -0.4716796875,
+        -5
+      ],
+      "rotation": [
+        -0.30910634990008459,
+        0.6359664019831915,
+        0.30910634990008459,
+        0.6359664019831915
+      ]
+    },
+    {
+      "children": [
+        10,
+        17
+      ],
+      "name": "te_L_1",
+      "translation": [
+        7.85205078125,
+        -1.336669921875,
+        0
+      ],
+      "rotation": [
+        0.5917727679346728,
+        0.3870755066124423,
+        0.6699348730590493,
+        -0.22619639513266513
+      ]
+    },
+    {
+      "name": "huku_kataL",
+      "translation": [
+        5.19140625,
+        -0.100341796875,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.12650307275488099,
+        0.9919662154446458
+      ]
+    },
+    {
+      "name": "huku_L",
+      "translation": [
+        2.39990234375,
+        14,
+        0
+      ],
+      "rotation": [
+        0.6131673087562526,
+        -0.3521730419447438,
+        0.6131673087562526,
+        -0.3521730419447438
+      ]
+    },
+    {
+      "children": [
+        13
+      ],
+      "name": "asi_R_3",
+      "translation": [
+        7.211181640625,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7264117337194764,
+        0.6872597712034834,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "asi_R_4",
+      "translation": [
+        2.5,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.306785427817165,
+        0.9517787039428017
+      ]
+    },
+    {
+      "children": [
+        15
+      ],
+      "name": "asi_L_3",
+      "translation": [
+        7.211181640625,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7264116055283443,
+        0.6872596499215656,
+        -4.2008536058775405e-4,
+        4.2008536058775405e-4
+      ]
+    },
+    {
+      "name": "asi_L_4",
+      "translation": [
+        2.5,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.306785427817165,
+        0.9517787039428017
+      ]
+    },
+    {
+      "name": "huku_R",
+      "translation": [
+        -2.39990234375,
+        14,
+        0
+      ],
+      "rotation": [
+        0.6131673087562526,
+        -0.3521730419447438,
+        0.6131673087562526,
+        -0.3521730419447438
+      ]
+    },
+    {
+      "children": [
+        18
+      ],
+      "name": "te_L_2",
+      "translation": [
+        5.57861328125,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.7048261814950864,
+        -0.05661043307793432,
+        0.12207172333988005,
+        0.6965011178071547
+      ]
+    },
+    {
+      "children": [
+        19
+      ],
+      "name": "te_L_3",
+      "translation": [
+        6.427978515625,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.09813124435368811,
+        0.9951734818018397
+      ]
+    },
+    {
+      "name": "te_L_4",
+      "translation": [
+        5.8310546875,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7061698423599233,
+        0.03638892333335713,
+        0.03638892333335713,
+        0.7061698423599233
+      ]
+    },
+    {
+      "children": [
+        21
+      ],
+      "name": "kubi",
+      "translation": [
+        7.80712890625,
+        0.224609375,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.31642077743265797,
+        0.9486189390945726
+      ]
+    },
+    {
+      "children": [
+        22
+      ],
+      "name": "kao",
+      "translation": [
+        3.8388671875,
+        1.128662109375,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.22713847327592308,
+        0.9738624717884362
+      ]
+    },
+    {
+      "name": "ago2",
+      "translation": [
+        0.829833984375,
+        0.0654296875,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.9951362889494559,
+        0.09850769724191483
+      ]
+    },
+    {
+      "children": [
+        24
+      ],
+      "name": "te_R_2",
+      "translation": [
+        6.751220703125,
+        -0.471923828125,
+        -5.39990234375
+      ],
+      "rotation": [
+        -0.6567380355633313,
+        0.26210136972132949,
+        0.6783323811634409,
+        0.19965772036101277
+      ]
+    },
+    {
+      "children": [
+        25
+      ],
+      "name": "te_R_3",
+      "translation": [
+        6.427978515625,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.09813124435368811,
+        0.9951734818018397
+      ]
+    },
+    {
+      "name": "te_R_4",
+      "translation": [
+        5.8310546875,
+        0,
+        0
+      ],
+      "rotation": [
+        0.7061698423599233,
+        0.03638892333335713,
+        0.03638892333335713,
+        0.7061698423599233
+      ]
+    },
+    {
+      "mesh": 0,
+      "skin": 0,
+      "name": "m149",
+      "children": [
+        0
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "skeleton": 0,
+      "joints": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "inverseBindMatrices": 9
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        26
+      ],
+      "name": "m149"
+    }
+  ],
+  "scene": 0,
+  "samplers": [
+    {
+      "wrapS": 33071,
+      "wrapT": 33071,
+      "magFilter": 9728,
+      "minFilter": 9728
+    }
+  ],
+  "images": [
+    {
+      "uri": "m149_1.png"
+    }
+  ],
+  "textures": [
+    {
+      "source": 0,
+      "sampler": 0
+    }
+  ],
+  "materials": [
+    {
+      "name": "m149_1",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "alphaMode": "MASK",
+      "doubleSided": true
+    },
+    {
+      "name": "m149_2",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "alphaMode": "MASK",
+      "doubleSided": true
+    },
+    {
+      "name": "m149_3",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "alphaMode": "MASK"
+    },
+    {
+      "name": "m149_4",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0
+      },
+      "extensions": {
+        "KHR_materials_unlit": {}
+      },
+      "alphaMode": "MASK"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 29088,
+      "uri": "m149.bin"
+    }
+  ]
+}
